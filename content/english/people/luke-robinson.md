@@ -3,19 +3,18 @@ title: Luke Robinson
 image: "/images/people/luke-robinson.jpg"
 description: PhD student (2021 cohort)
 weight: 2021
-draft: true
 social:
   - name: github
     icon: fa-brands fa-github
-    link: https://github.com
-
-  - name: twitter
-    icon: fa-brands fa-x-twitter
-    link: https://twitter.com
+    link: https://github.com/lukerob01
 
   - name: linkedin
     icon: fa-brands fa-linkedin
-    link: https://linkedin.com
+    link: https://www.linkedin.com/in/luke-robinson-aa9894152/
 ---
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
+Luke is a current DPhil (PhD) student at the Mobile Robotics Group under the
+supervision of Daniele De Martini and Paul Newman. He joined in 2021 after
+completing his MEng also at the University of Oxford. His work involves
+challenging traditional mobile robotic paradigms by moving sensors off the
+robots and into the environment.
