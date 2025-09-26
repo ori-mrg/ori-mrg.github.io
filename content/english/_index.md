@@ -3,12 +3,12 @@
 banner:
   title: "The Mobile Robotics Group"
   carousel_images:
+    - src: "/images/banner/sax.png"
+      alt: "SAX 2021"
     - src: "/images/banner/restaurant_2025.jpg"
       alt: "MRG social 2025"
     - src: "/images/banner/banner_2020.png"
       alt: "Banner remote 2020"
-    - src: "/images/banner/sax.png"
-      alt: "SAX 2021"
 
 # Intro
 intro:
