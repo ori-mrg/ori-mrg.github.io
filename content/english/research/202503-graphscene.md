@@ -3,11 +3,10 @@ title: "GraphSCENE: On-Demand Critical Scenario Generation for Autonomous Vehicl
 meta_title: ""
 description: "this is meta description"
 date: 2025-03-04T05:00:00Z
-image: "/images/research/202503-graphscene/banner.jpg"
-categories: ["Application", "Data"]
+image: "/images/research/202503-graphscene/graphscene_combo.png"
+categories: ["GNNs", "Scenario Generation", "Autonomous Vehicles"]
 author: "Efimia Panagiotaki"
-tags: ["nextjs", "tailwind"]
-draft: true
+tags: ["graphs", "simulation", "navigation"]
+draft: false
+external: "https://efimiap.github.io/graphscene/"
 ---
-
-Lorem Ipsum
