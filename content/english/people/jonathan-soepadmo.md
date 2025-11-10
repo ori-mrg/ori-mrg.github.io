@@ -1,6 +1,6 @@
 ---
 title: Jonathan Soepadmo
-image: "/images/jonathan-soepadmo.png"
+image: "/images/people/jonathan-soepadmo.png"
 description: MEng student
 weight: 2025
 draft: false
