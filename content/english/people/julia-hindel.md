@@ -1,6 +1,6 @@
 ---
 title: Julia Hindel
-image: "/images/people/julia-hindel.png"
+image: "/images/people/julia-hindel.jpg"
 description: ELLIS PhD Student, Co-supervised (2022)
 weight: 2022
 social:
