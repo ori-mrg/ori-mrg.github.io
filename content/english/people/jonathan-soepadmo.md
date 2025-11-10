@@ -1,7 +1,7 @@
 ---
 title: Jonathan Soepadmo
 image: "/images/people/jon-soepadmo.png"
-description: MEng student
+description: MEng student (2025)
 weight: 2025
 draft: false
 social:
