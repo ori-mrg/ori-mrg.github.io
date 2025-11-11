@@ -21,6 +21,9 @@ social:
     link: mailto:daniele@robots.ox.ac.uk
 ---
 
-Daniele is a Departmental Lecturer in Mobile Robotics and co-leads with Professor Paul Newmand the Mobile Robotics Group. He is also a College Lecturer in Engineering Science at Pembroke College.
+Daniele De Martini is Associate Professor in Mobile Robotics at the Oxford Robotics Institute and the Oxford e-Research Centre, University of Oxford, and Tutorial Fellow in Engineering Science at Keble College.
+He co-leads the Mobile Robotics Group alongside Professor Paul Newman. His research combines robotics and artificial intelligence to design autonomous systems capable of perception, mapping, localisation, and adaptive decision-making.
 
-Daniele is interested in robust navigation and scene understanding -- from odometry and localisation to detection and segmentation -- enabling the deployment of robots in challenging weather and scenarios. He is exploring techniques to improve robustness either by utilising inherently more robust sensors, focusing on FMCW scanning radar technology, or enhancing the training of perception modules.
+By exploiting multiple sensing modalities—from vision to lidar to radar—his group explores how robots can reliably navigate and interpret the world, even in challenging or extreme conditions.
+Daniele has deployed robots in environments ranging from urban Oxford to the Scottish Highlands.
+Another key aspect of his work examines robotics–infrastructure interaction, enabling dynamic sharing of sensing and computing resources between robots and smart environments to support safe and scalable autonomy.
