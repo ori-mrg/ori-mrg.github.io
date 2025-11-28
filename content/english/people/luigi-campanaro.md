@@ -1,6 +1,6 @@
 ---
 title: Luigi Campanaro
-image: "https://ori.ox.ac.uk/media/5287/luigi_pic-cropped-1.jpg?width=250&height=250&v=1d9e229f790aa90"
+image: "/images/people/luigi-campanaro.jpg"
 description: Visiting PDRA (2024)
 alumni: true
 weight: 2024

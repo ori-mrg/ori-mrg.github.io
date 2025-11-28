@@ -1,6 +1,6 @@
 ---
 title: Samuel Sze
-image: "https://ori.ox.ac.uk/media/12162/image-1.png?width=250&height=250&v=1d9e2295b3cfb80"
+image: "/images/people/samuel-sze.jpg"
 description: MRes student (2022 cohort)
 weight: 2022
 alumni: true

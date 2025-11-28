@@ -1,6 +1,6 @@
 ---
 title: Chris Linegar
-image: "https://ori.ox.ac.uk/media/5379/chris-linegar.jpg?width=250&height=250&v=1d9e229f874a1f0"
+image: "/images/people/chris-linegar.jpg"
 description: PhD (2013 cohort)
 alumni: true
 weight: 2013

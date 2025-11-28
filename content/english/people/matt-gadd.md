@@ -1,6 +1,6 @@
 ---
 title: Matt Gadd
-image: "https://ori.ox.ac.uk/media/6496/square.png?rxy=0.66019417475728159,0.52475247524752477&width=250&height=250&v=1d9e229818b5930"
+image: "/images/people/matt-gadd.jpg"
 description: Senior PDRA (2024)
 alumni: true
 weight: 2024

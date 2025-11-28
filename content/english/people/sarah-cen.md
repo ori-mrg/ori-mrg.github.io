@@ -1,6 +1,6 @@
 ---
 title: Sarah Cen
-image: "https://ori.ox.ac.uk/media/5402/sarah-cen.jpg?width=250&height=250&v=1d9e229f71cb310"
+image: "/images/people/sarah-cen.jpg"
 description: MRes student (2016 cohort)
 alumni: true
 weight: 2016

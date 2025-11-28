@@ -1,6 +1,6 @@
 ---
 title: Valentina Mușat
-image: "https://ori.ox.ac.uk/media/6145/valentina-musat.png?width=250&height=250&v=1d9e229826676f0"
+image: "/images/people/valentina-musat.jpg"
 description: PhD (2020 cohort)
 alumni: true
 weight: 2020

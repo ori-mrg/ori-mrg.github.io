@@ -1,6 +1,6 @@
 ---
 title: Paul Amayo
-image: "https://ori.ox.ac.uk/media/5397/paul-amayo.jpg?width=250&height=250&v=1d9e229f7097930"
+image: "/images/people/paul-amayo.jpg"
 description: PhD student (2014 cohort)
 alumni: true
 weight: 2014

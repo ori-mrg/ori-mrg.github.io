@@ -1,6 +1,6 @@
 ---
 title: Tom Bruls
-image: "https://ori.ox.ac.uk/media/5299/tom-300x300.jpg?width=250&height=250&v=1d9e229f7a78df0"
+image: "/images/people/tom-bruls.jpg"
 description: PhD student (2016 cohort)
 alumni: true
 weight: 2016
