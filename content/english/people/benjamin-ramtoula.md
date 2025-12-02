@@ -1,8 +1,8 @@
 ---
 title: Benjamin Ramtoula
 image: "/images/people/benjamin-ramtoula.jpg"
-description: AIMS CDT student (2020 cohort)
-weight: 2020
+description: PDRA 2025
+weight: 1025
 social:
   - name: github
     icon: fa-brands fa-github
