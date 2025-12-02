@@ -1,7 +1,7 @@
 ---
 title: Jaihyun Kim
 image: "/images/avatar.webp"
-description: Undergraduate Intern (2025 4YP)
+description: MEng student (2025)
 weight: 2025
 draft: false
 social:
