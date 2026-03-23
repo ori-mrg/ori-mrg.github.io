@@ -15,7 +15,7 @@ By partnering with the Mobile Robotics Group (MRG), organisations gain access to
 
 We are grateful for the support and collaboration of the following organisations:
 
-[ LOGO GRID ]
+{{< partners-carousel >}}
 
 ---
 
@@ -54,11 +54,7 @@ Where appropriate, commercial considerations such as licensing or limited public
 
 If you are interested in exploring a partnership, we would be delighted to discuss opportunities.
 
-Please contact us at:
-
-**daniele@robots.ox.ac.uk**
-
-and reach out to the Group Lead directly to arrange an initial discussion.
+Please contact us at **daniele@robots.ox.ac.uk** and reach out to the Group Lead directly to arrange an initial discussion.
 
 ---
 

@@ -1,5 +1,5 @@
 {{ define "main" }}
-  
+
   <!-- Banner -->
   {{ with .Params.banner }}
     <section class="section pt-14">
@@ -32,9 +32,9 @@
               <div class="swiper-wrapper">
                 {{ range .carousel_images }}
                   <div class="swiper-slide">
-                    {{ partial "image" (dict 
-                      "Src" .src 
-                      "Alt" .alt 
+                    {{ partial "image" (dict
+                      "Src" .src
+                      "Alt" .alt
                       "Loading" "eager"
                       "Class" "w-full h-auto rounded-lg"
                       "DisplayXL" "800x"
