@@ -3,6 +3,7 @@ title: Santosh SP
 image: "/images/people/santosh-sp.jpg"
 description: Visiting MSc (2025)
 weight: 2025
+alumni: true
 social:
   - name: github
     icon: fa-brands fa-github
