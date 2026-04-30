@@ -21,8 +21,8 @@ social:
     link: https://bramtoula.github.io
 ---
 
-I am currently a DPhil (PhD) student at the Mobile Robotics Group of the University of Oxford supervised by Paul Newman. I also work part-time at [Oxa](https://oxa.tech). My DPhil is being pursued as part of the [CDT in Autonomous Intelligent Machines and Systems](https://aims.robots.ox.ac.uk), and focuses on representations for images and datasets.
+Benjamin is currently a postdoctoral researcher at the [Mobile Robotics Group](https://ori-mrg.github.io) of the [University of Oxford](https://www.ox.ac.uk/) working with [Daniele De Martini](https://ori-mrg.github.io/people/daniele-de-martini/) and [Paul Newman](https://ori-mrg.github.io/people/paul-newman/). He pursued his DPhil in the same group as part of the [CDT in Autonomous Intelligent Machines and Systems (AIMS)](https://aims.robots.ox.ac.uk/).
 
-Before moving to Oxford, I studied at EPFL, ČVUT, and the MISTLab of Polytechnique Montréal. I also spent some time at MSL in Stanford, and in Team CoSTAR at NASA JPL, working on the DARPA SubT Challenge.
- 
-I am originally from [Nantes, France](https://en.wikipedia.org/wiki/Nantes).
+Before moving to Oxford, he studied at [EPFL](https://www.epfl.ch/en/), [ČVUT](https://www.cvut.cz/en), and the [MISTLab](https://mistlab.ca/) of [Polytechnique Montréal](https://www.polymtl.ca/en/). He also spent some time at [MSL](https://msl.stanford.edu/) in [Stanford](https://www.stanford.edu/), and in [Team CoSTAR](https://costar.jpl.nasa.gov/) at [NASA JPL](https://www.jpl.nasa.gov/), working on the [DARPA SubT Challenge](https://www.darpa.mil/research/challenges/subterranean/).
+
+His research focuses on using representations learned by foundation models to make robust systems.
