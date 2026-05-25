@@ -1,5 +1,5 @@
 ---
-title: "The Building as a Sensor: Calibration-Free Autonomy via External Camera Relays"
+title: "Building-Scale Robot Navigation via a Relay of External Cameras"
 meta_title: ""
 description: "this is meta description"
 date: 2026-05-22T05:00:00Z
