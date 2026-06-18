@@ -2,6 +2,7 @@
 title: "Sponsorships"
 meta_title: ""
 description: "Industry partnerships and sponsorship opportunities with the Mobile Robotics Group."
+draft: true
 ---
 
 ### Industry Partnerships
