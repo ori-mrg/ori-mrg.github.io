@@ -15,10 +15,10 @@ name = "Datasets"
 url = "/datasets"
 weight = 3
 
-[[main]]
-name = "Sponsors"
-url = "/sponsors"
-weight = 4
+# [[main]]
+# name = "Sponsors"
+# url = "/sponsors"
+# weight = 4
 
 [[main]]
 name = "Contact"
