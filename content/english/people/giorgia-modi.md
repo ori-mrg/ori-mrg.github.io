@@ -3,6 +3,7 @@ title: Giorgia Modi
 image: "/images/people/giorgia-modi.jpg"
 description: Visiting MSc (2025)
 weight: 2025
+alumni: true
 social:
   - name: github
     icon: fa-brands fa-github

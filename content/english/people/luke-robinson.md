@@ -1,8 +1,8 @@
 ---
 title: Luke Robinson
 image: "/images/people/luke-robinson.jpg"
-description: PhD student (2021 cohort)
-weight: 2021
+description: PDRA 2026
+weight: 1026
 social:
   - name: github
     icon: fa-brands fa-github
