@@ -4,6 +4,7 @@ image: "/images/people/jon-soepadmo.png"
 description: MEng student (2025)
 weight: 2025
 draft: false
+alumni: true
 social:
   - name: github
     icon: fa-brands fa-github
