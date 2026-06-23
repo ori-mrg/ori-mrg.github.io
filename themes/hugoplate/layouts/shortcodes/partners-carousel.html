@@ -1,6 +1,6 @@
 {{/* ─── Collect partners from sponsors section ─── */}}
 {{ $.Page.Scratch.Delete "sc_partners" }}
-{{ range sort (where $.Site.RegularPages "Section" "sponsors") "Weight" "asc" }}
+{{ range sort (where $.Site.RegularPages "Section" "ind_partners") "Weight" "asc" }}
   {{ $logo := "" }}
   {{ if .Params.logo }}{{ $logo = .Params.logo }}{{ else if .Params.image }}{{ $logo = .Params.image }}{{ end }}
   {{ $link := .RelPermalink }}
