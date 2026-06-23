@@ -97,7 +97,7 @@ sidebar = ["categories", "tags"]
 
 # google map
 [google_map]
-enable = true
+enable = false
 map_api_key = "AIzaSyDaLTT4XUmTs3WJdGwr7WlHLcDm92ZWVAI"
 map_latitude = "51.76079584016669"
 map_longitude = "-1.260493207342955"

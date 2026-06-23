@@ -16,4 +16,4 @@ There are multiple ways to join us:
 - **Internship**: Each year we host 1-2 interns over the summer. Please find more information about internships at ORI and name Daniele De Martini as a supervisor in your application. Most commonly Oxford undergrads can be funded through the EUROP or EPSRC Vacation Internship scheme.
 - **Visiting students**: Students from other institutions can occasionally visit ORI - for example working on a Masters thesis or collaborating on a project.
 
-In brief, please contact Daniele De Martini about of these opportunities.
+In brief, please contact Daniele De Martini about these opportunities.
