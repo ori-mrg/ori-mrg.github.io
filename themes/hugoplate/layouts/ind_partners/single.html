@@ -6,14 +6,7 @@
         <div class="lg:col-8 text-center">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto" "Size" "200x200") }}
-          {{ else if .Params.Email }}
-            <img
-              class="mx-auto"
-              alt="{{ .Title }}"
-              height="200"
-              width="200"
-              src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
+            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto" "Size" "200x") }}
           {{ end }}
           <h1 class="h3 mt-10">{{ .Title }}</h1>
           <div class="content mt-6">
@@ -35,14 +28,25 @@
         </div>
       </div>
 
-      <div class="row pb-16 pt-14">
-        {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title }}
-        {{ range $filterByAuthor }}
-          <div class="md:col-6 lg:col-4 mb-12">
-            {{ partial "components/blog-card" . }}
-          </div>
-        {{ end }}
+    <div class="row pb-16 pt-14">
+      {{ $filterByTag := where site.RegularPages "Params.tags" "intersect" (slice .Title) }}
+
+      {{ if gt (len $filterByTag) 0 }}
+      {{ range $filterByTag }}
+      <div class="md:col-6 lg:col-4 mb-12">
+        {{ partial "components/blog-card" . }}
       </div>
+      {{ end }}
+      {{ else }}
+      <div class="col-12 text-center py-10">
+        <h3 class="h4 mb-2">Transmission incoming...</h3>
+        <p class="text-light">
+          Our collaboration with <strong>{{ .Title }}</strong> is currently in "Stealth Mode." 
+          We're working on things so cool we’re not allowed to blog about them yet. 
+          <br><span class="italic text-sm">(Or our writers are just being dramatic. Check back soon!)</span>
+        </p>
+      </div>
+      {{ end }}
     </div>
   </section>
 {{ end }}

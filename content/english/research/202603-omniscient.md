@@ -5,7 +5,7 @@ date: 2026-06-13T05:00:00Z
 image: "images/research/202604-omniscient/multi_robot.jpg"
 categories: ["deployment", "site-driven robotics"]
 author: "Daniele De Martini"
-tags: ["Omniscient", "Gompels Healthcare"]
+tags: ["Omniscient Innovations Ltd", "Gompels Healthcare"]
 draft: false
 ---
 

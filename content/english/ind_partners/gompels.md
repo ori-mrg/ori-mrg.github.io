@@ -1,7 +1,14 @@
 ---
-title: "Gompels Helathcare"
+title: "Gompels Healthcare"
 weight: 10
-logo: "/images/partners/gompels.png"
-link: "https://ori-mrg.github.io/tags/gompels-healthcare/"
-type: "industry"
+image: "/images/partners/gompels.png"
+
+social:
+  - name: website
+    icon: fa-solid fa-globe
+    link: https://www.gompels.co.uk/
+
+  - name: linkedin
+    icon: fa-brands fa-linkedin
+    link: https://www.linkedin.com/company/gompels/
 ---
