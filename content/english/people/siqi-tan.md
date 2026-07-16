@@ -14,7 +14,7 @@ social:
 
   - name: website
     icon: fa-solid fa-globe
-    link: https://tsq1.xyz
+    link: https://kevintsq.github.io/
 
   - name: email
     icon: fa-solid fa-envelope
