@@ -2,7 +2,7 @@
 title: Henry Lema
 image: "/images/people/henry-lema.png"
 description: Visiting MSc (2025)
-weight: 2025
+weight: 3025
 social:
   - name: github
     icon: fa-brands fa-github
