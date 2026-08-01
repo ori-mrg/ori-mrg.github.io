@@ -3,6 +3,7 @@ title: Monica Li
 image: "/images/people/monica-li.jpg"
 description: Visiting PhD (2026)
 weight: 2026
+alumni: true
 social:
 
   - name: github
