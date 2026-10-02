@@ -3,6 +3,7 @@ title: Elise Cohen
 image: "/images/people/elise-cohen.jpg"
 description: Summer Intern (2026)
 weight: 4026
+alumni: true
 social:
   - name: linkedin
     icon: fa-brands fa-linkedin

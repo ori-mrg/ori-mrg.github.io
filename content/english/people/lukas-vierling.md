@@ -3,6 +3,7 @@ title: Lukas Vierling
 image: "/images/people/lukas-vierling.jpg"
 description: MSc Student (2025)
 weight: 3026
+alumni: true
 social:
   - name: github
     icon: fa-brands fa-github

@@ -1,8 +1,8 @@
 ---
 title: Shing Hei Rickie Chan
 image: "/images/people/shing-hei-rickie-chan.jpg"
-description: Summer Intern (2026)
-weight: 4026
+description: MEng student (2026)
+weight: 3026
 social:
   - name: github
     icon: fa-brands fa-github

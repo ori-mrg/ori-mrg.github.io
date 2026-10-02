@@ -1,8 +1,8 @@
 ---
 title: Azka Adziman
 image: "/images/people/azka-adziman.jpg"
-description: Summer Intern (2026)
-weight: 4026
+description: MEng student (2026)
+weight: 3026
 social:
 
   - name: linkedin
