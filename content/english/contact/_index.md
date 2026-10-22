@@ -1,10 +1,9 @@
 ---
-title: "Contact"
+title: "Joining the group"
 meta_title: ""
 description: "this is meta description"
 draft: false
 ---
-# Joining the group
 
 I receive a very large number of enquiries every year from prospective DPhil students, postdocs, interns, visiting students and Oxford students looking for projects.
 
