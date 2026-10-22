@@ -21,6 +21,6 @@ url = "/ind_partners"
 weight = 4
 
 [[main]]
-name = "Contact"
-url = "/contact"
+name = "Joining the group"
+url = "/join"
 weight = 6
