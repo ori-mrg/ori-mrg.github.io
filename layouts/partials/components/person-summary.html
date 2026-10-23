@@ -1,0 +1,31 @@
+<div class="person-summary">
+  <div class="person-portrait">
+    {{ with .Params.image }}
+      {{ partial "image" (dict "Src" . "Context" $ "Alt" $.Title "Size" "360x360" "Class" "person-photo") }}
+    {{ else }}
+      <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+        <circle cx="40" cy="28" r="12" fill="currentColor" />
+        <path d="M16 72a24 24 0 0148 0" fill="currentColor" />
+      </svg>
+    {{ end }}
+  </div>
+  <div class="person-details">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ with .Params.description }}<p>{{ . | plainify }}</p>{{ end }}
+    {{ with .Params.social }}
+      <ul class="person-links" aria-label="Links for {{ $.Title }}">
+        {{ range . }}
+          <li>
+            <a
+              href="{{ .link | safeURL }}"
+              target="_blank"
+              rel="noopener"
+              aria-label="{{ .name | default .title }} — {{ $.Title }}">
+              <i class="{{ .icon }}" aria-hidden="true"></i>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</div>

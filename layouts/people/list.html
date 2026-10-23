@@ -1,0 +1,36 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+  <section class="section people-section">
+    <div class="container">
+      <nav class="people-jump-links" aria-label="People sections">
+        <a href="#current-members">Current members</a>
+        <a href="#alumni">Alumni</a>
+      </nav>
+      <section id="current-members" aria-labelledby="current-members-title">
+        <h2 id="current-members-title" class="people-section-title">
+          Current members
+        </h2>
+        <ul class="people-grid">
+          {{ range .RegularPages }}
+            {{ if not .Params.alumni }}
+              <li>{{ partial "components/person-summary.html" . }}</li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </section>
+      <section id="alumni" class="people-alumni" aria-labelledby="alumni-title">
+        <h2 id="alumni-title" class="people-section-title">Alumni</h2>
+        <ul class="alumni-list">
+          {{ range .RegularPages.Reverse }}
+            {{ if .Params.alumni }}
+              <li>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ with .Params.description }}<p>{{ . | plainify }}</p>{{ end }}
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </section>
+    </div>
+  </section>
+{{ end }}

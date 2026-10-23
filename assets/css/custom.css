@@ -482,3 +482,130 @@ input:focus-visible,
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
+
+/* People directory: photo-led member cards and compact alumni entries. */
+.people-jump-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+.people-jump-links a {
+  color: var(--site-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.people-section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+.people-grid > li {
+  background: var(--color-light);
+  border-radius: 4px;
+  padding: 2rem 1.5rem;
+}
+.dark .people-grid > li {
+  background: var(--color-darkmode-light);
+}
+.person-summary {
+  text-align: center;
+}
+.person-portrait {
+  margin: 0 auto 1.25rem;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--site-rule);
+}
+.person-portrait picture {
+  display: block;
+}
+.person-portrait img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+.person-portrait svg {
+  width: 180px;
+  height: 180px;
+  color: var(--color-text-light);
+  opacity: 0.4;
+}
+.person-details h3,
+.alumni-list h3 {
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+.person-details h3 a:hover,
+.alumni-list h3 a:hover {
+  color: var(--site-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.person-details p,
+.alumni-list p {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+.person-details h3 {
+  font-size: 1.25rem;
+}
+.person-details p {
+  font-size: 0.875rem;
+}
+.person-links {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem;
+  margin-top: 0.75rem;
+}
+.person-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: var(--site-accent);
+  font-size: 0.875rem;
+}
+.person-links a:hover {
+  background: var(--site-rule);
+  border-radius: 4px;
+}
+.people-alumni {
+  margin-top: 3rem;
+}
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+.alumni-list > li {
+  padding-block: 0.85rem;
+  border-top: 1px solid var(--site-rule);
+}
+@media (max-width: 1023px) {
+  .people-grid,
+  .alumni-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 639px) {
+  .people-grid,
+  .alumni-list {
+    grid-template-columns: 1fr;
+  }
+  .people-alumni {
+    margin-top: 2rem;
+  }
+}
