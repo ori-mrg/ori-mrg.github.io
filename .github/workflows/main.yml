@@ -22,9 +22,6 @@ env:
   HUGO_ENV: production
   HUGO_VERSION: "0.147.3"
   GO_VERSION: "1.23.3"
-  TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
-  TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-  TINA_SEARCH_TOKEN: ${{ secrets.TINA_SEARCH_TOKEN }}
 
 jobs:
   # Build job
@@ -38,7 +35,7 @@ jobs:
 
       - name: Install Go
         run: |
-          wget -O ${{ runner.temp }}/go.deb https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz \
+          wget -O ${{ runner.temp }}/go.deb https://dl.google.com/go/go${GO_VERSION}.linux-arm64.tar.gz \
           && sudo tar -C /usr/local -xzf ${{ runner.temp }}/go.deb
 
       - name: Checkout
@@ -50,9 +47,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-
-      - name: Setup Project
-        run: npm run project-setup
 
       - name: Install npm dependencies
         run: npm install

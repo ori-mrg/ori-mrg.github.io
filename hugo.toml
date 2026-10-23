@@ -10,21 +10,10 @@ timeZone = "Europe/London"
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 # disable language
-disableLanguages = [
-] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
-hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 # default language
 defaultContentLanguage = 'en'
 # defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
 defaultContentLanguageInSubdir = false
-
-########################### Services #############################
-[services]
-[services.googleAnalytics]
-ID = 'G-MEASUREMENT_ID' # see https://gohugo.io/templates/internal/#configure-google-analytics
-
-[services.disqus]
-shortname = 'themefisher-template' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 
 ########################## Permalinks ############################
 [permalinks.page]
@@ -59,7 +48,7 @@ target = 'assets/notwatching/hugo_stats.json'
 
 ############################# Outputs ############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
+home = ["HTML", "RSS", "SearchIndex"]
 
 ############################# Imaging ############################
 [imaging]
@@ -88,24 +77,7 @@ unsafe = true
 style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
 lineNumbersInTable = false
 
-[markup.tableOfContents]
-startLevel = 2
-endLevel = 5
-ordered = true
-
-
-########################### Media types ###########################
-[mediaTypes]
-[mediaTypes."application/manifest+json"]
-suffixes = ["webmanifest"]
-
-
-########################### Output Format ##########################
-[outputFormats]
-[outputFormats.WebAppManifest]
-mediaType = "application/manifest+json"
-rel = "manifest"
-
+########################### Search index ###########################
 [outputFormats.SearchIndex]
 mediaType = "application/json"
 baseName = "searchindex"
@@ -118,9 +90,6 @@ notAlternative = true
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/swiper/swiper-bundle.css"
-lazy = true
-[[params.plugins.css]]
-link = "plugins/glightbox/glightbox.css"
 lazy = true
 [[params.plugins.css]]
 link = "plugins/font-awesome/v6/brands.css"
@@ -139,24 +108,3 @@ lazy = false
 [[params.plugins.js]]
 link = "plugins/swiper/swiper-bundle.js"
 lazy = false
-[[params.plugins.js]]
-link = "plugins/cookie.js"
-lazy = false
-[[params.plugins.js]]
-link = "plugins/glightbox/glightbox.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/gallery-slider.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/accordion.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/tab.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/modal.js"
-lazy = true
-[[params.plugins.js]]
-link = "plugins/youtube-lite.js"
-lazy = true

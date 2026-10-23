@@ -1,43 +1,5 @@
-// main script
-(function () {
-  "use strict";
-
-  // Dropdown Menu Toggler For Mobile
-  // ----------------------------------------
-  const dropdownMenuToggler = document.querySelectorAll(
-    ".nav-dropdown > .nav-link",
-  );
-
-  dropdownMenuToggler.forEach((toggler) => {
-    toggler?.addEventListener("click", (e) => {
-      e.target.closest(".nav-item").classList.toggle("active");
-    });
-  });
-
-  // Testimonial Slider
-  // ----------------------------------------
-  new Swiper(".testimonial-slider", {
-    spaceBetween: 24,
-    loop: true,
-    pagination: {
-      el: ".testimonial-slider-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-    },
-  });
-})();
-
-// Initialize banner carousel and partners carousel
+// Carousels used on the home and industry partnerships pages.
 document.addEventListener("DOMContentLoaded", function () {
-  // Banner carousel (existing)
   const bannerCarousel = document.querySelector(".banner-carousel");
   if (bannerCarousel) {
     new Swiper(".banner-carousel", {
@@ -59,14 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Partners carousel (new)
-  // Expects HTML markup similar to other carousels:
-  // <div class="swiper partners-carousel">
-  //   <div class="swiper-wrapper"> ... .swiper-slide items ... </div>
-  //   <div class="swiper-pagination"></div>
-  //   <div class="swiper-button-prev"></div>
-  //   <div class="swiper-button-next"></div>
-  // </div>
   const partnersCarousel = document.querySelector(".partners-carousel");
   if (partnersCarousel) {
     new Swiper(".partners-carousel", {

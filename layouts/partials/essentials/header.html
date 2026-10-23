@@ -97,15 +97,6 @@
           </li>
         {{ end }}
       {{ end }}
-      {{ if site.Params.navigation_button.enable }}
-        <li class="mt-4 inline-block lg:hidden">
-          <a
-            class="btn btn-outline-primary btn-sm"
-            href="{{ site.Params.navigation_button.link | relLangURL }}">
-            {{ site.Params.navigation_button.label }}
-          </a>
-        </li>
-      {{ end }}
     </ul>
 
     <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
@@ -116,7 +107,7 @@
             class="border-border text-text-dark hover:text-primary
             dark:border-darkmode-border mr-5 inline-block border-r pr-5
             text-xl dark:text-white cursor-pointer dark:hover:text-darkmode-primary
-            {{ if not (or site.Params.navigation_button.enable site.Params.theme_switcher) }}
+            {{ if not site.Params.theme_switcher }}
               lg:border-r-0 lg:pr-0
             {{ end }}"
             data-target="search-modal">
@@ -125,18 +116,7 @@
         {{ end }}
       {{ end }}
 
-      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-light rounded") }}
       {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
-
-
-      <!-- navigation btn -->
-      {{ if site.Params.navigation_button.enable }}
-        <a
-          href="{{ site.Params.navigation_button.link | relLangURL }}"
-          class="btn btn-outline-primary btn-sm hidden lg:inline-block">
-          {{ site.Params.navigation_button.label }}
-        </a>
-      {{ end }}
     </div>
   </nav>
 </header>
