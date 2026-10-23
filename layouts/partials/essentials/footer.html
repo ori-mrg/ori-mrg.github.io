@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a class="footer-name" href="{{ site.Home.RelPermalink }}"
+      >{{ site.Title }}</a
+    >
+    <ul class="footer-links" aria-label="Social links">
+      {{ range site.Data.social.main }}
+        <li>
+          <a href="{{ .link | safeURL }}" target="_blank" rel="noopener"
+            >{{ .name | title }}</a
+          >
+        </li>
+      {{ end }}
+    </ul>
+    <p class="footer-credit">{{ site.Params.copyright | markdownify }}</p>
+  </div>
+</footer>

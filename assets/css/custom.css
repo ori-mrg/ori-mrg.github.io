@@ -1,1 +1,278 @@
-/* Add your own custom styles here */
+/* Shared design. Keep group-specific styling here, outside the bundled theme. */
+:root {
+  --site-accent: #315d78;
+  --site-rule: #e2e5e7;
+}
+.dark {
+  --site-accent: #a5c9de;
+  --site-rule: #383d42;
+}
+html {
+  font-size: 16px;
+  scroll-padding-top: 7rem;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+h1,
+.h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+h2,
+.h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+h3,
+.h3 {
+  font-size: 1.5rem;
+}
+h4,
+.h4 {
+  font-size: 1.25rem;
+}
+h5,
+.h5 {
+  font-size: 1.1rem;
+}
+h6,
+.h6 {
+  font-size: 1rem;
+}
+.container {
+  width: 100%;
+  padding-inline: 1.5rem;
+}
+.section {
+  padding-block: 3.5rem;
+}
+.section-sm {
+  padding-block: 3rem;
+}
+.bg-gradient {
+  background: none;
+}
+.header {
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--site-rule);
+}
+.navbar {
+  gap: 0.5rem;
+}
+.header .navbar-brand {
+  width: 260px;
+  max-width: 100%;
+}
+.header .navbar-brand img {
+  width: 100%;
+  height: auto;
+}
+.header .nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.65rem 0.5rem;
+}
+.header .nav-link:hover,
+.header .nav-link.active {
+  color: var(--site-accent);
+}
+.header .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-thickness: 2px;
+}
+.header [aria-label="search"] {
+  font-size: 1rem;
+  margin-right: 0.9rem;
+  padding-right: 0.9rem;
+}
+.header .theme-switcher {
+  margin-right: 0;
+}
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.page-heading {
+  padding-block: 3rem 1.5rem;
+}
+.page-heading h1 {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--site-rule);
+}
+.page-heading + .section {
+  padding-top: 1.5rem;
+}
+/* Readable prose and restrained shared controls. */
+.content {
+  line-height: 1.75;
+}
+.content p {
+  margin-block: 0 1.25rem;
+}
+.content h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  margin-top: 2rem;
+}
+.content h3 {
+  font-size: 1.5rem;
+  margin-top: 1.75rem;
+}
+.content a:not(.btn) {
+  color: var(--site-accent);
+  text-underline-offset: 0.2em;
+}
+.content blockquote {
+  border-width: 0 0 0 2px;
+  border-radius: 0;
+  background: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn {
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  text-transform: none;
+}
+.social-icons li a {
+  background: none;
+  color: inherit;
+  border: 1px solid var(--site-rule);
+}
+a,
+button,
+input,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.theme-switcher input:focus-visible + label {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 5px;
+}
+.site-footer {
+  margin-top: 3rem;
+  border-top: 1px solid var(--site-rule);
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding-block: 1.75rem;
+  font-size: 0.875rem;
+}
+.footer-name {
+  font-weight: 600;
+}
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+.footer-credit {
+  flex-basis: 100%;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+.footer-credit a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+@media (max-width: 1199px) {
+  .menu-toggle {
+    display: inline-flex;
+    order: 3;
+  }
+  .header #nav-menu {
+    display: none;
+    order: 4;
+    width: 100%;
+    padding-block: 1rem 0;
+    text-align: left;
+  }
+  .header.menu-open #nav-menu {
+    display: block;
+  }
+  .header .navbar > div:last-child {
+    margin-left: auto;
+    order: 2;
+  }
+  .header .nav-link {
+    padding: 0.75rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  .header #nav-menu {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 639px) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+  .header .navbar-brand {
+    width: 180px;
+  }
+  .header {
+    padding-block: 0.85rem;
+  }
+  .header [aria-label="search"] {
+    margin-right: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  .menu-toggle span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .section {
+    padding-block: 2.5rem;
+  }
+  .section-sm {
+    padding-block: 2rem;
+  }
+  .page-heading {
+    padding-top: 2rem;
+  }
+  .footer-inner {
+    gap: 0.75rem 1rem;
+  }
+}
+/* The original menu adds horizontal margins at wide breakpoints. */
+.header #nav-menu > .nav-item {
+  margin-inline: 0;
+}
+@media (max-width: 399px) {
+  .header .navbar-brand {
+    width: 150px;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1160px !important;
+  }
+}
