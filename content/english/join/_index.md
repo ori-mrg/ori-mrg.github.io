@@ -133,11 +133,13 @@ Tell me:
 
 Please do not send a long generic research proposal.
 
-If you would like to discuss the research fit, you can also schedule a short conversation at:
+After reviewing your enquiry, I may invite you to a short conversation about your previous work and research interests.
+If so, I will send you a link to book a meeting.
 
-**cal.eu/danieledema**
+For these conversations, please be ready to explain your own contribution to the work you describe, the decisions you made, and any limitations or unresolved questions.
+A few figures, results or other examples are sufficient; there is no need to prepare a new research proposal or a long slide deck.
 
-Please bring a few **visuals**. A couple of figures, videos, results or examples of systems you have worked on are much more useful to me than a long slide deck.
+Given the volume of enquiries, I am unable to respond individually to everyone.
 
 In particular, I would like to understand:
 
@@ -145,4 +147,4 @@ In particular, I would like to understand:
 - what **your own contribution** was; and
 - what you would be excited to work on next.
 
-For prospective DPhil students, these conversations are **informal research chats only**. They are not Oxford admissions interviews, do not constitute an offer of supervision, and do not imply admission or funding.
+These conversations are **informal research chats only**, unless clearly stated. They are not interviews, do not constitute an offer, and do not imply admission or funding.
