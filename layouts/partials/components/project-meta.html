@@ -11,7 +11,7 @@
   {{ end }}
 </div>
 {{ with .GetTerms "categories" }}
-  <ul class="research-topics" aria-label="Research topics">
+  <ul class="research-topics" aria-label="Topics">
     {{ range . }}
       <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
     {{ end }}

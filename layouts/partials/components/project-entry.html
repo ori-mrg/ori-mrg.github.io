@@ -13,13 +13,24 @@
     <h2>
       <a href="{{ $destination }}"
         >{{ .Title }}{{ if .Params.external }}
-          <span class="research-external" aria-label="Project website"> ↗</span>
+          <span
+            class="research-external"
+            aria-label="{{ if eq .Section `datasets` }}
+              Dataset website
+            {{ else }}
+              Project website
+            {{ end }}">
+            ↗</span
+          >
         {{ end }}</a
       >
     </h2>
-    {{ partial "research/meta.html" . }}
+    {{ partial "components/project-meta.html" . }}
     {{ with .Summary | plainify }}
       <p class="research-summary">{{ . | truncate 240 }}</p>
+    {{ end }}
+    {{ if eq .Section "datasets" }}
+      {{ partial "components/dataset-links.html" . }}
     {{ end }}
   </div>
 </article>

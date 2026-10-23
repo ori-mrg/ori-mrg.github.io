@@ -6,7 +6,7 @@
       <div class="research-list">
         {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
         {{ range $paginator.Pages }}
-          {{ partial "research/entry.html" . }}
+          {{ partial "components/project-entry.html" . }}
         {{ end }}
       </div>
       {{ partial "components/pagination.html" . }}

@@ -37,8 +37,8 @@
 
           {{ if gt (len $filterByTag) 0 }}
             {{ range $filterByTag }}
-              {{ if eq .Section "research" }}
-                {{ partial "research/entry.html" . }}
+              {{ if in (slice "research" "datasets") .Section }}
+                {{ partial "components/project-entry.html" . }}
               {{ else }}
                 <div class="research-other-entry">
                   {{ partial "components/blog-card" . }}

@@ -1,0 +1,17 @@
+{{/* Optional URL fields: external (website), download, paper, code. */}}
+{{ $links := slice }}
+{{ range slice (dict "field" "external" "label" "Dataset website") (dict "field" "download" "label" "Download") (dict "field" "paper" "label" "Paper") (dict "field" "code" "label" "Code") }}
+  {{ $label := .label }}
+  {{ with index $.Params .field }}
+    {{ $links = $links | append (dict "url" . "label" $label) }}
+  {{ end }}
+{{ end }}
+{{ with $links }}
+  <ul class="dataset-links" aria-label="Dataset resources">
+    {{ range . }}
+      <li>
+        <a href="{{ .url }}">{{ .label }} <span aria-hidden="true">↗</span></a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

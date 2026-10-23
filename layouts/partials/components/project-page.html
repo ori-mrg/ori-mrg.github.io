@@ -1,0 +1,38 @@
+<section class="section">
+  <article class="container research-article">
+    {{ with .CurrentSection }}
+      <a class="research-back" href="{{ .RelPermalink }}"
+        >← All {{ .Title | lower }}</a
+      >
+    {{ end }}
+    <header class="research-article-header">
+      <h1>{{ .Title }}</h1>
+      {{ partial "components/project-meta.html" . }}
+      {{ if eq .Section "datasets" }}
+        {{ partial "components/dataset-links.html" . }}
+      {{ else }}
+        {{ with .Params.external }}
+          <p>
+            <a class="research-website" href="{{ . }}">Project website ↗</a>
+          </p>
+        {{ end }}
+      {{ end }}
+    </header>
+    {{ with .Params.image }}
+      <div class="research-article-image">
+        {{ partial "image" (dict "Src" . "Context" $ "Alt" $.Title "Class" "w-full rounded") }}
+      </div>
+    {{ end }}
+    <div class="content">{{ .Content }}</div>
+    {{ with .GetTerms "tags" }}
+      <footer class="research-article-tags">
+        <span>Tags</span>
+        <ul class="research-topics">
+          {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      </footer>
+    {{ end }}
+  </article>
+</section>

@@ -469,3 +469,16 @@ input:focus-visible,
     width: 100%;
   }
 }
+
+.dataset-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 0.85rem;
+  font-size: 0.875rem;
+}
+.dataset-links a {
+  color: var(--site-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}

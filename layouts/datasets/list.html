@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+  <section class="section research-section">
+    <div class="container">
+      {{ with .Content }}<div class="content mb-8">{{ . }}</div>{{ end }}
+      <div class="research-list">
+        {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
+        {{ range $paginator.Pages }}
+          {{ partial "components/project-entry.html" . }}
+        {{ end }}
+      </div>
+      {{ partial "components/pagination.html" . }}
+    </div>
+  </section>
+{{ end }}
