@@ -130,6 +130,7 @@ Tell me:
 2. **what you have worked on**, and what *you personally contributed*;
 3. **what you would like to work on with me**, and why it fits our research; and
 4. where relevant, **how you expect the position or visit to be funded**.
+5. You have read these guidelines.
 
 Please do not send a long generic research proposal.
 
