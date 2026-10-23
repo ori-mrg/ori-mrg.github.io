@@ -1,0 +1,23 @@
+<details class="research-browse">
+  <summary>Browse by topic or tag</summary>
+  {{ range slice "categories" "tags" }}
+    {{ $taxonomy := . }}
+    {{ with index site.Taxonomies $taxonomy }}
+      <div class="research-browse-group">
+        <h2>{{ if eq $taxonomy "categories" }}Topics{{ else }}Tags{{ end }}</h2>
+        <ul>
+          {{ range .Alphabetical }}
+            {{ $research := where .Pages "Section" "research" }}
+            {{ if $research }}
+              <li>
+                <a href="{{ .Page.RelPermalink }}"
+                  >{{ .Page.LinkTitle }} <span>({{ len $research }})</span></a
+                >
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  {{ end }}
+</details>

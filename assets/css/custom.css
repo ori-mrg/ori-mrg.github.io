@@ -276,3 +276,196 @@ input:focus-visible,
     max-width: 1160px !important;
   }
 }
+
+/* Research entries share one layout on research, topic, tag and partner pages. */
+.research-list {
+  display: grid;
+}
+.research-entry {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 2rem;
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--site-rule);
+}
+.research-entry:first-child {
+  padding-top: 0;
+}
+.research-entry-no-image {
+  grid-template-columns: 1fr;
+}
+.research-entry-image {
+  align-self: start;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f5f6f7;
+}
+.dark .research-entry-image {
+  background: #262a2d;
+}
+.research-entry-image picture {
+  display: block;
+}
+.research-entry-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+}
+.research-entry h2 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.35;
+  margin: 0 0 0.7rem;
+  text-wrap: pretty;
+}
+.research-entry h2 a:hover {
+  color: var(--site-accent);
+}
+.research-external {
+  font-size: 0.8em;
+  color: var(--site-accent);
+  white-space: nowrap;
+}
+.research-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+.dark .research-meta {
+  color: var(--color-darkmode-text-light);
+}
+.research-meta a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.research-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+}
+.research-topics a,
+.research-partners a,
+.research-back,
+.research-website {
+  color: var(--site-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.research-partners {
+  margin-top: 0.6rem;
+  font-size: 0.8125rem;
+}
+.research-partners ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.research-partners li {
+  display: inline;
+}
+.research-partners li:not(:last-child)::after {
+  content: ",";
+}
+.research-summary {
+  margin-top: 0.85rem;
+  max-width: 75ch;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+.research-browse {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--site-rule);
+  padding-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+.research-browse summary {
+  cursor: pointer;
+  color: var(--site-accent);
+  width: fit-content;
+}
+.research-browse summary:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 5px;
+}
+.research-browse-group {
+  margin-top: 1.5rem;
+}
+.research-browse-group h2 {
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  margin-bottom: 0.75rem;
+}
+.research-browse-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.research-browse-group a {
+  display: block;
+  border: 1px solid var(--site-rule);
+  border-radius: 4px;
+  padding: 0.3rem 0.65rem;
+}
+.research-browse-group a:hover {
+  border-color: var(--site-accent);
+  color: var(--site-accent);
+}
+.research-browse-group a span {
+  opacity: 0.7;
+}
+.research-back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+@layer components {
+  .research-article.container {
+    max-width: 840px !important;
+  }
+}
+.research-article-header {
+  margin-bottom: 2rem;
+}
+.research-article-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 1.25rem;
+}
+.research-article-image {
+  margin-bottom: 2rem;
+}
+.research-article-tags {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--site-rule);
+  font-size: 0.875rem;
+}
+.partner-research {
+  padding-block: 3rem;
+}
+.partner-research > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.research-other-entry {
+  max-width: 720px;
+  padding-block: 2rem;
+}
+.research-section nav[aria-label="Pagination"] {
+  margin-top: 2rem;
+}
+@media (max-width: 767px) {
+  .research-entry {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-block: 1.75rem;
+  }
+  .research-entry-image {
+    max-width: 480px;
+    width: 100%;
+  }
+}

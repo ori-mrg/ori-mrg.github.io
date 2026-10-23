@@ -1,0 +1,21 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+  <section class="section research-section">
+    <div class="container">
+      <a class="research-back" href="{{ `research/` | relLangURL }}"
+        >← All research</a
+      >
+      <div class="research-list">
+        {{ range .Data.Pages.ByDate.Reverse }}
+          {{ if eq .Section "research" }}
+            {{ partial "research/entry.html" . }}
+          {{ else }}
+            <div class="research-other-entry">
+              {{ partial "components/blog-card" . }}
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

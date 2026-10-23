@@ -1,0 +1,29 @@
+<div class="research-meta">
+  {{ with .Date }}
+    <time datetime="{{ .Format `2006-01-02` }}">{{ .Format "2006" }}</time>
+  {{ end }}
+  {{ with .Params.author }}
+    {{ with site.GetPage (printf "/people/%s" (. | urlize)) }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ else }}
+      <span>{{ . }}</span>
+    {{ end }}
+  {{ end }}
+</div>
+{{ with .GetTerms "categories" }}
+  <ul class="research-topics" aria-label="Research topics">
+    {{ range . }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+  </ul>
+{{ end }}
+{{ with partial "research/partners.html" . }}
+  <div class="research-partners">
+    <span>In collaboration with</span>
+    <ul aria-label="Industry collaborators">
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

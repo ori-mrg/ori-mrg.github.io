@@ -1,0 +1,25 @@
+{{ $destination := .RelPermalink }}
+{{ with .Params.external }}{{ $destination = . }}{{ end }}
+<article
+  class="research-entry {{ if not .Params.image }}
+    research-entry-no-image
+  {{ end }}">
+  {{ with .Params.image }}
+    <div class="research-entry-image">
+      {{ partial "image" (dict "Src" . "Context" $ "Alt" $.Title "Class" "research-thumbnail" "DisplayXL" "640x" "DisplayLG" "640x" "DisplayMD" "480x" "DisplaySM" "480x") }}
+    </div>
+  {{ end }}
+  <div class="research-entry-body">
+    <h2>
+      <a href="{{ $destination }}"
+        >{{ .Title }}{{ if .Params.external }}
+          <span class="research-external" aria-label="Project website"> ↗</span>
+        {{ end }}</a
+      >
+    </h2>
+    {{ partial "research/meta.html" . }}
+    {{ with .Summary | plainify }}
+      <p class="research-summary">{{ . | truncate 240 }}</p>
+    {{ end }}
+  </div>
+</article>

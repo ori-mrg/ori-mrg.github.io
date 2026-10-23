@@ -1,0 +1,9 @@
+{{/* Preserve the existing company-name tags as the source of these relationships. */}}
+{{ $partners := slice }}
+{{ $tags := .Params.tags | default slice }}
+{{ range where site.RegularPages "Section" "ind_partners" }}
+  {{ if in $tags .Title }}
+    {{ $partners = $partners | append . }}
+  {{ end }}
+{{ end }}
+{{ return $partners }}
