@@ -1,5 +1,12 @@
 ---
 title: "Multi-Robot Planning and Control from CCTV Camera Networks"
+
+summary: >-
+  A network of CCTV cameras and an edge server coordinates four different robots in a
+  working warehouse, with perception, planning, and control handled offboard. The system
+  uses an uncalibrated camera network to navigate narrow aisles, avoid collisions, and
+  manage shared routes without task-specific sensors on the robots.
+
 meta_title: "Multi-Robot Planning and Control from CCTV Camera Networks"
 description: "this is meta description"
 date: 2026-07-11T05:00:00Z

@@ -27,7 +27,7 @@
     </h2>
     {{ partial "components/project-meta.html" . }}
     {{ with .Summary | plainify }}
-      <p class="research-summary">{{ . | truncate 240 }}</p>
+      <p class="research-summary">{{ . }}</p>
     {{ end }}
     {{ if eq .Section "datasets" }}
       {{ partial "components/dataset-links.html" . }}

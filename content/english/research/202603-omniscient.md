@@ -1,5 +1,13 @@
 ---
 title: "Scaling Robotic Infrastructure: A Case Study in Orchestration"
+
+summary: >-
+  This warehouse study investigates how configuration-driven orchestration can simplify
+  the deployment of robots, cameras, and computing infrastructure. Working with
+  Omniscient Innovations and Gompels Healthcare, we compared a shared configuration
+  model with manual setup, finding shorter deployment times and fewer configuration
+  errors as systems grew.
+
 meta_title: ""
 date: 2026-06-13T05:00:00Z
 image: "images/research/202604-omniscient/multi_robot.jpg"

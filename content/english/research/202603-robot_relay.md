@@ -1,5 +1,12 @@
 ---
 title: "Building-Scale Robot Navigation via a Relay of External Cameras"
+
+summary: >-
+  A network of external cameras guides a mobile robot across an office floor without
+  onboard sensing, SLAM, or camera calibration. The system learns connections between
+  camera views by observing people, then hands control between cameras so the robot can
+  navigate through multiple rooms and corridors.
+
 meta_title: ""
 description: "this is meta description"
 date: 2026-05-22T05:00:00Z
