@@ -16,6 +16,6 @@ social:
 
 Joy is a fourth-year MEng student undertaking her Fourth Year Project (4YP) at the Mobile Robotics Group at the University of Oxford, working with Daniele De Martini and Benjamin Ramtoula.
 
-Her project focuses on developing DNA-inspired descriptors for LiDAR point cloud data.
+Her project focuses on implementing DNA-inspired descriptors for LiDAR point cloud data.
 
 She is currently pursuing an MEng in Engineering Science at Oxford, specialising in Machine Learning, Robotics and Control Theory.
