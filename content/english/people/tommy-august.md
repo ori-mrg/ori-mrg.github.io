@@ -15,7 +15,7 @@ social:
 
   - name: email
     icon: fa-solid fa-envelope
-    link: thomas.august@pmb.ox.ac.uk
+    link: mailto:thomas.august@pmb.ox.ac.uk
 
 ---
 
