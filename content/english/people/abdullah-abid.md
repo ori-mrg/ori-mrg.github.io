@@ -1,7 +1,7 @@
 ---
 title: Abdullah Abid
 image: "/images/people/Abdullah_Abid.jpg"
-description: MEng student (2027)
+description: MEng student (2026)
 weight: 3026
 draft: false
 social:
