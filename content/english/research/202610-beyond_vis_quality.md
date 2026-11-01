@@ -7,7 +7,7 @@ summary: >-
 meta_title: ""
 description: "this is meta description"
 date: 2026-10-25T05:00:00Z
-image: "images/202610-beyond_vis_quality/beyond_vis_quality_main.png"
+image: "images/research/202610-beyond_vis_quality/beyond_vis_quality_main.png"
 categories: ["Foundational Models", "Video Generation"]
 author: "Jianhao Yuan"
 tags: ["foundation model", "video generation", "vision"]

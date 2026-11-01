@@ -11,7 +11,7 @@ summary: >-
 meta_title: ""
 description: "this is meta description"
 date: 2026-07-07T05:00:00Z
-image: "images/research/202707-prioreye/prioreye_thumbnail.gif"
+image: "images/research/202607-prioreye/prioreye_thumbnail.gif"
 categories: ["Autonomous Driving", "Memory"]
 author: "Kyuhwan Yeon"
 tags: ["end-to-end autonomous driving", "memory"]
