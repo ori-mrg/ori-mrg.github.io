@@ -110,6 +110,8 @@ When contacting me about a visit, please explain:
 - the proposed dates and duration; and
 - how the visit would be funded.
 
+Please note that the maximum duration is 6 months.
+
 ### Undergraduate / BSc research visits
 
 I am **not able to host informal short research visits for BSc/undergraduate students** simply as an opportunity to spend a few weeks or months doing research at Oxford.
