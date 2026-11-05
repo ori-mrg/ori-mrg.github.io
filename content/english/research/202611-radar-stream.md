@@ -9,7 +9,7 @@ description: "this is meta description"
 date: 2026-11-05T05:00:00Z
 image: "https://streamrps.cs.uni-freiburg.de/static/images/figures/qual/seg_full_sax_ours.png"
 categories: ["Radar", "Semantic Segmentation"]
-author: "Jianhao Yuan"
+author: "Julia Hindel"
 tags: ["radar", "semantic segmentation"]
 draft: false
 external: "https://streamrps.cs.uni-freiburg.de/"
