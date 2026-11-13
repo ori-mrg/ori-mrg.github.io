@@ -72,7 +72,7 @@ At Gompels, we will record CCTV footage from the custom cameras installed in the
   <figcaption><a href="camera-plan.webp">View the camera location plan at full size.</a></figcaption>
 </figure>
 
-**Planned recording period: December 2026 to January 2027.**
+**Planned recording period: December 2026 to February 2027.**
 
 We will record data during normal warehouse operations. This system will not interfere with typical operations, and you will not need to perform any actions or processes beyond what you normally do.
 
